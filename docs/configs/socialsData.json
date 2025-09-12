@@ -1,0 +1,30 @@
+[
+  {
+    "pos": { "x": 380, "y": 250 },
+    "name": "GitHub",
+    "description": "GitHub is where I host my projects.",
+    "link": "https://github.com/magomin",
+    "logoData": { "name": "github-logo", "width": 228.6, "height": 179.5 }
+  },
+  {
+    "pos": { "x": 680, "y": 250 },
+    "name": "Linkedin",
+    "description": "Connect with me on LinkedIn to see how I support businesses and recruiters with AI-driven solutions at Fribl.",
+    "link": "https://www.linkedin.com/in/matt-domi/",
+    "logoData": {
+      "name": "linkedin-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 980, "y": 250 },
+    "name": "Email",
+    "address": "matthieu@fribl.co",
+    "logoData": {
+      "name": "email-logo",
+      "width": 128,
+      "height": 128
+    }
+  }
+]

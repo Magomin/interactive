@@ -1,0 +1,12 @@
+[
+  {
+    "pos": { "x": 0, "y": 0 },
+    "data": {
+      "title": "Fribl LinkedIn Scraper",
+      "description": "Python automation tool I built to scrape LinkedIn profiles and enrich candidate data for Fribl's AI recruitment platform. Features data extraction, profile analysis, and seamless integration with recruitment workflows.",
+      "link": "https://github.com/Magomin/FriblLinkedinScraper"
+    },
+    "thumbnail": "fribl-scraper"
+  }
+
+]

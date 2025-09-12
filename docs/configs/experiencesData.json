@@ -1,0 +1,54 @@
+[
+  {
+    "pos": { "x": 250, "y": 0 },
+    "cardHeight": 270,
+    "roleData": {
+      "title": "Growth & Product Specialist",
+      "description": "At Fribl, I drove multichannel prospecting campaigns (Email, LinkedIn), generated over 10k targeted leads with Apify, built custom automation tools (Python, n8n, AI) to personalize outreach, and represented the company at the Young Festival of Cannes 2025.",
+      "company": {
+        "name": "Fribl",
+        "startDate": "2024",
+        "endDate": "Present"
+      }
+    }
+  },
+  {
+    "pos": { "x": 250, "y": 300 },
+    "cardHeight": 250,
+    "roleData": {
+      "title": "Product Owner",
+      "description": "Led product development at Hexband: designed a complete kit (packaging, QR codes, nutrition guide), built the visual identity, negotiated with suppliers (-15% costs) and improved retention by +20% through customer feedback analysis.",
+      "company": {
+        "name": "Hexband",
+        "startDate": "2023",
+        "endDate": "2023"
+      }
+    }
+  },
+  {
+    "pos": { "x": 250, "y": 600 },
+    "cardHeight": 250,
+    "roleData": {
+      "title": "Business Developer",
+      "description": "At MyDataMachine, acquired and retained 4 recurring clients, opened a major strategic account in the defense sector, and explored the Spanish market, laying the foundation for international expansion.",
+      "company": {
+        "name": "MyDataMachine",
+        "startDate": "2022",
+        "endDate": "2023"
+      }
+    }
+  },
+  {
+    "pos": { "x": 250, "y": 900 },
+    "cardHeight": 250,
+    "roleData": {
+      "title": "Marketing Growth Operator",
+      "description": "At Propulse Video, generated €350k in leads (with €200k closed deals), exceeded qualified lead targets by +233%, and increased inbound leads by +50% through SEO optimization and improved acquisition channels.",
+      "company": {
+        "name": "Propulse Video",
+        "startDate": "2021",
+        "endDate": "2022"
+      }
+    }
+  }
+]

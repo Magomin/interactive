@@ -1,8 +1,10 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/interactive/",
   plugins: [react()],
-});
+  base: '/interactive/',    // très important (nom de ton repo GitHub)
+  build: {
+    outDir: 'docs'          // 🔑 génère les fichiers buildés dans /docs
+  }
+})
