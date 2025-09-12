@@ -58,12 +58,12 @@ export default async function initGame() {
   k.loadSprite("postgres-logo", "./logos/postgres-logo.png");
   k.loadSprite("html-logo", "./logos/html-logo.png");
   k.loadSprite("css-logo", "./logos/css-logo.png");
+  k.loadSprite("n8n-logo", "./logos/n8n-logo.png");
+  k.loadSprite("fribl-scraper", "./projects/fribl-scraper.png")
+  k.loadSprite("after-effect-logo", "./logos/after-effect-logo.png");
   k.loadSprite("tailwind-logo", "./logos/tailwind-logo.png");
   k.loadSprite("python-logo", "./logos/python-logo.png");
   k.loadSprite("email-logo", "./logos/email-logo.png");
-  k.loadSprite("sonic-js", "./projects/sonic-js.png");
-  k.loadSprite("kirby-ts", "./projects/kirby-ts.png");
-  k.loadSprite("platformer-js", "./projects/platformer-js.png");
   k.loadShaderURL("tiledPattern", null, "./shaders/tiledPattern.frag");
 
   const setInitCamZoomValue = () => {
@@ -112,7 +112,7 @@ export default async function initGame() {
       container.add([
         k.text(generalData.header.title, { font: "ibm-bold", size: 88 }),
         k.color(k.Color.fromHex(PALETTE.color1)),
-        k.pos(395, 0),
+        k.pos(300, 0),
         k.opacity(0),
       ]);
 
@@ -122,7 +122,7 @@ export default async function initGame() {
           size: 48,
         }),
         k.color(k.Color.fromHex(PALETTE.color1)),
-        k.pos(485, 100),
+        k.pos(450, 100),
         k.opacity(0),
       ]);
 
@@ -203,25 +203,28 @@ export default async function initGame() {
     }
   );
   makeSection(
-    k,
-    k.vec2(k.center().x, k.center().y + 400),
-    generalData.section4Name,
-    (parent) => {
-      const container = parent.add([k.opacity(0), k.pos(0, 0)]);
+  k,
+  k.vec2(k.center().x, k.center().y + 400),
+  generalData.section4Name,
+  (parent) => {
+    const container = parent.add([k.opacity(0), k.pos(0, 0)]);
 
-      for (const project of projectsData) {
-        makeProjectCard(
-          k,
-          container,
-          k.vec2(project.pos.x, project.pos.y),
-          project.data,
-          project.thumbnail
-        );
-      }
+    // Texte simple, aligné à gauche
+    container.add([
+      k.text("Projects coming soon...", {
+        font: "ibm-bold",
+        size: 32,
+        width: 600,
+        lineSpacing: 6,
+      }),
+      k.color(k.Color.fromHex(PALETTE.color1)),
+      k.pos(-180, 200),   // 👈 décale bien à gauche
+      k.anchor("left")  // 👈 ancre à gauche
+    ]);
 
-      makeAppear(k, container);
-    }
-  );
+    makeAppear(k, container);
+  }
+);
 
   makePlayer(k, k.vec2(k.center()), 700);
 }

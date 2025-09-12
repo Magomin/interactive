@@ -36,15 +36,6 @@
     }
   },
   {
-    "pos": { "x": -200, "y": 200 },
-    "name": "PostgreSQL",
-    "logoData": {
-      "name": "postgres-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
     "pos": { "x": -200, "y": -200 },
     "name": "HTML",
     "logoData": {
@@ -76,6 +67,26 @@
     "name": "Python",
     "logoData": {
       "name": "python-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -200, "y": -200 },
+    "name": "n8n/Make",
+    "logoData": {
+      "name": "n8n-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+
+
+  {
+    "pos": { "x": -200, "y": 200 },
+    "name": "After-effect",
+    "logoData": {
+      "name": "after-effect-logo",
       "width": 128,
       "height": 128
     }

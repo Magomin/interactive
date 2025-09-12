@@ -1,48 +1,26 @@
 [
   {
-    "pos": { "x": 300, "y": 250 },
+    "pos": { "x": 380, "y": 250 },
     "name": "GitHub",
     "description": "GitHub is where I host my projects.",
-    "link": "https://github.com/jslegenddev",
+    "link": "https://github.com/magomin",
     "logoData": { "name": "github-logo", "width": 228.6, "height": 179.5 }
   },
   {
-    "pos": { "x": 500, "y": 250 },
-    "name": "YouTube",
-    "description": "I make JavaScript/TypeScript game dev courses there.",
-    "link": "https://youtube.com/@jslegenddev",
+    "pos": { "x": 680, "y": 250 },
+    "name": "Linkedin",
+    "description": "Connect with me on LinkedIn to see how I support businesses and recruiters with AI-driven solutions at Fribl.",
+    "link": "https://www.linkedin.com/in/matt-domi/",
     "logoData": {
-      "name": "youtube-logo",
-      "width": 160,
-      "height": 110
-    }
-  },
-  {
-    "pos": { "x": 700, "y": 250 },
-    "name": "X",
-    "description": "Here is my X/Twitter, I don't really use it much.",
-    "link": "https://x.com/jslegenddev",
-    "logoData": {
-      "name": "x-logo",
+      "name": "linkedin-logo",
       "width": 128,
       "height": 128
     }
   },
   {
-    "pos": { "x": 900, "y": 250 },
-    "name": "Substack",
-    "description": "I make written JavaScript/TypeScript game dev tutorials there.",
-    "link": "https://jslegenddev.substack.com/",
-    "logoData": {
-      "name": "substack-logo",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "pos": { "x": 1100, "y": 250 },
+    "pos": { "x": 980, "y": 250 },
     "name": "Email",
-    "address": "jslegend@protonmail.com",
+    "address": "matthieu@fribl.co",
     "logoData": {
       "name": "email-logo",
       "width": 128,
