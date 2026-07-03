@@ -28,7 +28,7 @@ export default function makeProjectCard(k, parent, posVec2, data, thumbnail) {
   ]);
 
   const cardTitle = card.add([
-    k.text(data.title, {
+    k.text(data.year ? `${data.title} — ${data.year}` : data.title, {
       font: "ibm-bold",
       size: 32,
       width: 600,

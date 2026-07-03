@@ -10,7 +10,9 @@ export const emailAtom = atom("");
 export const isProjectModalVisibleAtom = atom(false);
 export const chosenProjectDataAtom = atom({
   title: "",
-  links: [{ id: 0, name: "", link: "" }],
+  description: "",
+  link: "",
+  video: "",
 });
 
 export const cameraZoomValueAtom = atom({ value: 1 });

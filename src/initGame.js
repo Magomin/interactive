@@ -60,9 +60,13 @@ export default async function initGame() {
   k.loadSprite("css-logo", "./logos/css-logo.png");
   k.loadSprite("n8n-logo", "./logos/n8n-logo.png");
   k.loadSprite("fribl-scraper", "./projects/fribl-scraper.png")
+  k.loadSprite("fribl-outbound", "./projects/fribl-outbound.png");
   k.loadSprite("after-effect-logo", "./logos/after-effect-logo.png");
   k.loadSprite("tailwind-logo", "./logos/tailwind-logo.png");
   k.loadSprite("python-logo", "./logos/python-logo.png");
+  k.loadSprite("docker-logo", "./logos/docker-logo.png");
+  k.loadSprite("nodejs-logo", "./logos/nodejs-logo.png");
+  k.loadSprite("claude-logo", "./logos/claude-logo.png");
   k.loadSprite("email-logo", "./logos/email-logo.png");
   k.loadShaderURL("tiledPattern", null, "./shaders/tiledPattern.frag");
 
@@ -209,18 +213,15 @@ export default async function initGame() {
   (parent) => {
     const container = parent.add([k.opacity(0), k.pos(0, 0)]);
 
-    // Texte simple, aligné à gauche
-    container.add([
-      k.text("Projects coming soon...", {
-        font: "ibm-bold",
-        size: 32,
-        width: 600,
-        lineSpacing: 6,
-      }),
-      k.color(k.Color.fromHex(PALETTE.color1)),
-      k.pos(-180, 200),   // 👈 décale bien à gauche
-      k.anchor("left")  // 👈 ancre à gauche
-    ]);
+    for (const projectData of projectsData) {
+      makeProjectCard(
+        k,
+        container,
+        k.vec2(projectData.pos.x, projectData.pos.y),
+        projectData.data,
+        projectData.thumbnail
+      );
+    }
 
     makeAppear(k, container);
   }

@@ -1,6 +1,6 @@
 [
   {
-    "pos": { "x": 0, "y": 0 },
+    "pos": { "x": -600, "y": -300 },
     "name": "JavaScript",
     "logoData": {
       "name": "javascript-logo",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "pos": { "x": -200, "y": 0 },
+    "pos": { "x": -400, "y": -300 },
     "name": "TypeScript",
     "logoData": {
       "name": "typescript-logo",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "pos": { "x": 0, "y": -200 },
+    "pos": { "x": -200, "y": -300 },
     "name": "React",
     "logoData": {
       "name": "react-logo",
@@ -27,7 +27,7 @@
     }
   },
   {
-    "pos": { "x": 0, "y": 200 },
+    "pos": { "x": 0, "y": -300 },
     "name": "Next.js",
     "logoData": {
       "name": "nextjs-logo",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "pos": { "x": -200, "y": -200 },
+    "pos": { "x": -600, "y": -100 },
     "name": "HTML",
     "logoData": {
       "name": "html-logo",
@@ -45,7 +45,7 @@
     }
   },
   {
-    "pos": { "x": -400, "y": -200 },
+    "pos": { "x": -400, "y": -100 },
     "name": "CSS",
     "logoData": {
       "name": "css-logo",
@@ -54,7 +54,7 @@
     }
   },
   {
-    "pos": { "x": -400, "y": 0 },
+    "pos": { "x": -200, "y": -100 },
     "name": "Tailwind",
     "logoData": {
       "name": "tailwind-logo",
@@ -63,7 +63,16 @@
     }
   },
   {
-    "pos": { "x": -400, "y": 200 },
+    "pos": { "x": 0, "y": -100 },
+    "name": "Node.js",
+    "logoData": {
+      "name": "nodejs-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -600, "y": 100 },
     "name": "Python",
     "logoData": {
       "name": "python-logo",
@@ -72,7 +81,34 @@
     }
   },
   {
-    "pos": { "x": -200, "y": -200 },
+    "pos": { "x": -400, "y": 100 },
+    "name": "PostgreSQL",
+    "logoData": {
+      "name": "postgres-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -200, "y": 100 },
+    "name": "Docker",
+    "logoData": {
+      "name": "docker-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": 0, "y": 100 },
+    "name": "Claude AI Agents",
+    "logoData": {
+      "name": "claude-logo",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "pos": { "x": -400, "y": 300 },
     "name": "n8n/Make",
     "logoData": {
       "name": "n8n-logo",
@@ -80,10 +116,8 @@
       "height": 128
     }
   },
-
-
   {
-    "pos": { "x": -200, "y": 200 },
+    "pos": { "x": -200, "y": 300 },
     "name": "After-effect",
     "logoData": {
       "name": "after-effect-logo",

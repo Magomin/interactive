@@ -1,12 +1,22 @@
 [
   {
-    "pos": { "x": 0, "y": 0 },
+    "pos": { "x": 0, "y": 400 },
+    "data": {
+      "title": "Fribl Outbound",
+      "year": "2026",
+      "description": "Internal B2B multichannel prospecting platform I built solo at Fribl: LinkedIn + email sequences, a visual workflow builder, unified inbox, CRM, A/B testing and a metrics dashboard. Built end-to-end with TypeScript, Next.js and PostgreSQL, with AI-powered lead enrichment.",
+      "video": "./videos/fribl-outbound.mp4"
+    },
+    "thumbnail": "fribl-outbound"
+  },
+  {
+    "pos": { "x": 0, "y": 1000 },
     "data": {
       "title": "Fribl LinkedIn Scraper",
+      "year": "2024",
       "description": "Python automation tool I built to scrape LinkedIn profiles and enrich candidate data for Fribl's AI recruitment platform. Features data extraction, profile analysis, and seamless integration with recruitment workflows.",
       "link": "https://github.com/Magomin/FriblLinkedinScraper"
     },
     "thumbnail": "fribl-scraper"
   }
-
 ]

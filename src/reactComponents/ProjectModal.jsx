@@ -5,34 +5,49 @@ export default function ProjectModal() {
   const projectData = useAtomValue(chosenProjectDataAtom);
   const [isVisible, setIsVisible] = useAtom(isProjectModalVisibleAtom);
 
+  if (!isVisible) return null;
+
+  // Respect Vite base path, same as how configs are fetched ("./...").
+  const videoSrc = projectData.video
+    ? `${import.meta.env.BASE_URL}${projectData.video.replace(/^\.\//, "")}`
+    : null;
+
   return (
-    isVisible && (
-      <div className="modal">
-        <div className="modal-content">
-          <h1>{projectData.title}</h1>
-          <div className="modal-btn-container">
-            {projectData.links.map((linkData) => (
-              <button
-                key={linkData.id}
-                className={"modal-btn"}
-                onClick={() => {
-                  window.open(linkData.link, "_blank");
-                }}
-              >
-                {linkData.name}
-              </button>
-            ))}
+    <div className="modal">
+      <div className="modal-content">
+        <h1>{projectData.title}</h1>
+        {videoSrc && (
+          <video
+            className="modal-video"
+            src={videoSrc}
+            controls
+            autoPlay
+            muted
+            loop
+          />
+        )}
+        {projectData.description && <p>{projectData.description}</p>}
+        <div className="modal-btn-container">
+          {projectData.link && (
             <button
               className={"modal-btn"}
               onClick={() => {
-                setIsVisible(false);
+                window.open(projectData.link, "_blank");
               }}
             >
-              Close
+              View project
             </button>
-          </div>
+          )}
+          <button
+            className={"modal-btn"}
+            onClick={() => {
+              setIsVisible(false);
+            }}
+          >
+            Close
+          </button>
         </div>
       </div>
-    )
+    </div>
   );
 }

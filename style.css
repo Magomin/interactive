@@ -60,6 +60,16 @@ html {
   overflow: auto;
 }
 
+.modal-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+  margin: 1vh 0;
+  background-color: black;
+}
+
 .modal-btn-container {
   display: flex;
   flex-direction: column;
